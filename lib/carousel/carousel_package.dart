@@ -17,14 +17,14 @@ class Carousel extends StatefulWidget {
     this.dotWidth = 8,
     this.viewPortFraction = 1,
     this.navWidgetLeft = const CircleAvatar(
-      radius: 15,
+      radius: 18,
       child: Icon(
         Icons.arrow_back_ios,
         size: 18,
       ),
     ),
     this.navWidgetRight = const CircleAvatar(
-      radius: 15,
+      radius: 18,
       child: Icon(
         Icons.arrow_forward_ios,
         size: 18,
@@ -95,7 +95,7 @@ class _CarouselState extends State<Carousel> {
         ),
         Positioned(
           top: 140,
-          left: 5,
+          left: 8,
           child: InkWell(
             onTap: () {
               controller.previousPage();
@@ -105,7 +105,7 @@ class _CarouselState extends State<Carousel> {
         ),
         Positioned(
           top: 140,
-          right: 5,
+          right: 8,
           child: InkWell(
             onTap: () {
               controller.nextPage();
